@@ -1,0 +1,144 @@
+#projects {
+  height: calc(100vh- 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsPartTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.projectCards {
+  background: rgb(50, 50, 50);
+  border: rgb(38 38 38);
+  position: relative;
+  overflow: hidden;
+  min-height: 13rem;
+  width: 50%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.projectCards:hover {
+  background: rgb(60, 60, 60);
+}
+
+.projectContent {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  justify-self: center;
+}
+
+.projectTitle {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0;
+}
+
+.projectDes {
+  font-weight: 200;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.projectTagWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5px;
+  list-style-type: none;
+  padding: 0 2rem;
+  margin-top: 10px;
+}
+
+.projectTag {
+  border: 1px solid purple;
+  background: rgb(30, 30, 30);
+  color: purple;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  font-size: 0.75rem;
+}
+
+.projectImg {
+  position: absolute;
+  object-fit: cover;
+  max-width: 20rem;
+  top: 10px;
+  right: -40px;
+  border-radius: 0.5rem;
+}
+
+.projectImg:hover {
+  transform: scale(1.1);
+  transform: translate(-5px, -5px);
+  rotate: -5deg;
+}
+
+@media screen and (max-width: 1060px) {
+  .projectImg {
+    max-width: 15rem;
+    top: 10px;
+    right: -40px;
+  }
+  .projectCards {
+    min-height: 12rem;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .projectTitle {
+    font-size: 0.9rem;
+  }
+
+  .projectDes {
+    font-weight: 200;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+  }
+
+  .projectTagWrapper {
+    gap: 3px;
+    padding: 0 2rem;
+    margin-top: 10px;
+  }
+
+  .projectTag {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .projectImg {
+    max-width: 12rem;
+  }
+
+  .projectCards {
+    min-height: 10rem;
+    width: 90%;
+  }
+  .projectTitle {
+    font-size: 0.8rem;
+  }
+
+  .projectsPartTitle {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .projectCards {
+    max-height: 13rem;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
