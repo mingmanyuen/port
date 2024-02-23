@@ -11,7 +11,7 @@ const NavBar = () => {
     <nav className={styles.navbar}>
       <Link
         activeClass="active"
-        to="Intro_intro__aJ1uU"
+        to="intro"
         spy={true}
         smooth={true}
         offset={-100}
@@ -23,7 +23,7 @@ const NavBar = () => {
       <div className={styles.desktopMenu}>
         <Link
           activeClass={styles.active}
-          to="Intro_intro__aJ1uU"
+          to="intro"
           spy={true}
           smooth={true}
           offset={-100}
@@ -34,7 +34,7 @@ const NavBar = () => {
         </Link>
         <Link
           activeClass={styles.active}
-          to="About_about__sWYeK"
+          to="about"
           spy={true}
           smooth={true}
           offset={-30}
@@ -45,7 +45,7 @@ const NavBar = () => {
         </Link>
         <Link
           activeClass={styles.active}
-          to="Projects_projects__X2jWD"
+          to="projects"
           spy={true}
           smooth={true}
           offset={-60}
@@ -56,7 +56,7 @@ const NavBar = () => {
         </Link>
         <Link
           activeClass={styles.active}
-          to="Contact_contact__BIPvD"
+          to="contact"
           spy={true}
           smooth={true}
           offset={-50}
@@ -70,7 +70,7 @@ const NavBar = () => {
         className={styles.desktopMenuBtn}
         onClick={() => {
           document
-            .getElementById("Contact_contact__BIPvD")
+            .getElementById("contact")
             .scrollIntoView({ behavior: "smooth" });
         }}
       >
@@ -89,7 +89,7 @@ const NavBar = () => {
       >
         <Link
           activeClass={styles.active}
-          to="Intro_intro__aJ1uU"
+          to="intro"
           spy={true}
           smooth={true}
           offset={-100}
@@ -101,7 +101,7 @@ const NavBar = () => {
         </Link>
         <Link
           activeClass={styles.active}
-          to="About_about__sWYeK"
+          to="about"
           spy={true}
           smooth={true}
           offset={-30}
@@ -113,7 +113,7 @@ const NavBar = () => {
         </Link>
         <Link
           activeClass={styles.active}
-          to="Projects_projects__X2jWD"
+          to="projects"
           spy={true}
           smooth={true}
           offset={-60}
@@ -125,7 +125,7 @@ const NavBar = () => {
         </Link>
         <Link
           activeClass={styles.active}
-          to="Contact_contact__BIPvD"
+          to="contact"
           spy={true}
           smooth={true}
           offset={-50}

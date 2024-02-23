@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./About.module.css";
+import "./About.css";
 //import skillsData from "../../lib/data";
 import { motion } from "framer-motion";
 
@@ -32,10 +32,10 @@ const About = () => {
     "R Studio",
   ];
   return (
-    <section id={styles.about}>
-      <section className={styles.aboutMePart}>
-        <span className={styles.aboutMeTitle}>About Me</span>
-        <span className={styles.aboutMePara}>
+    <section id="about">
+      <section className="aboutMePart">
+        <span className="aboutMeTitle">About Me</span>
+        <span className="aboutMePara">
           The experiences of studying Social data science and being an
           e-commerce assistant, I discovered my affinity for front-end
           development and its potential to create impactful user experiences.
@@ -45,12 +45,12 @@ const About = () => {
         </span>
       </section>
 
-      <section className={styles.skillsPart}>
-        <span className={styles.skillsTitle}> What i can do</span>
-        <ul className={styles.skillsList}>
+      <section className="skillsPart">
+        <span className="skillsTitle"> What i can do</span>
+        <ul className="skillsList">
           {skillsData.map((skill, index) => (
             <motion.li
-              className={styles.skill}
+              className="skill"
               key={index}
               variants={fadeInVarients}
               initial="initial"

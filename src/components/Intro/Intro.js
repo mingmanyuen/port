@@ -1,40 +1,32 @@
 import React from "react";
-import styles from "./Intro.module.css";
+import "./Intro.css";
 import IntroContentImg from "../../assets/intro_img.png";
 import ContactImg from "../../assets/contact.png";
 import { Link } from "react-scroll";
 
 const Intro = () => {
   return (
-    <section id={styles.intro}>
-      <div className={styles.introContent}>
-        <span className={styles.greeting}>Hello, </span>
+    <section id="intro">
+      <div className="introContent">
+        <span className="greeting">Hello, </span>
         <span className="greetingContent">
           I'm{" "}
-          <span className={styles.introName}>
+          <span className="introName">
             Ming Man,
             <br />a Front-End Developer
           </span>
-          <p className={styles.greetingPara}>
+          <p className="greetingPara">
             with experience in creating web applications.
           </p>
-          <Link to="Contact_contact__BIPvD">
-            <button className={styles.hireMeBtn}>
-              <img
-                src={ContactImg}
-                alt="hire-me"
-                className={styles.hireMeBtnImg}
-              />
+          <Link to="contact">
+            <button className="hireMeBtn">
+              <img src={ContactImg} alt="hire-me" className="hireMeBtnImg" />
               Hire Me
             </button>
           </Link>
         </span>
       </div>
-      <img
-        src={IntroContentImg}
-        className={styles.introContentImg}
-        alt="image"
-      />
+      <img src={IntroContentImg} className="introContentImg" alt="image" />
     </section>
   );
 };

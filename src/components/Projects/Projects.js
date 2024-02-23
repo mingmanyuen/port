@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import styles from "./Projects.module.css";
+import "./Projects.css";
 import { motion, useScroll } from "framer-motion";
 import Gym from "../../assets/gym_ex.png";
 import Jojack from "../../assets/Jojack.png";
@@ -22,8 +22,8 @@ const projectsData = [
 ];
 const Projects = () => {
   return (
-    <section id={styles.projects}>
-      <h1 className={styles.projectsPartTitle}>My Projects</h1>
+    <section id="projects">
+      <h1 className="projectsPartTitle">My Projects</h1>
       {projectsData.map((item, index) => (
         <React.Fragment>
           <Project {...item} />
@@ -41,22 +41,22 @@ const Project = ({ title, description, tags, imageUrl }) => {
   });
   return (
     <motion.section
-      className={styles.projectCards}
+      className="projectCards"
       style={{ scale: scrollYProgress, opacity: scrollYProgress }}
     >
-      <div className={styles.projectContent}>
-        <h3 className={styles.projectTitle}>{title}</h3>
-        <p className={styles.projectDes}>{description}</p>
-        <ul className={styles.projectTagWrapper}>
+      <div className="projectContent">
+        <h3 className="projectTitle">{title}</h3>
+        <p className="projectDes">{description}</p>
+        <ul className="projectTagWrapper">
           {tags.map((tag, index) => (
-            <li key={index} className={styles.projectTag}>
+            <li key={index} className="projectTag">
               {tag}
             </li>
           ))}
         </ul>
       </div>
 
-      <img src={imageUrl} alt={title} className={styles.projectImg}></img>
+      <img src={imageUrl} alt={title} className="projectImg"></img>
     </motion.section>
   );
 };

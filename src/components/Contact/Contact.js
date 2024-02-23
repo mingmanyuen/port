@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import styles from "./Contact.module.css";
+import "./Contact.css";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -23,32 +23,32 @@ const Contact = () => {
       );
   };
   return (
-    <div id={styles.contact}>
-      <h1 className={styles.contactMeTitle}>Contact Me</h1>
-      <span className={styles.contactDes}>
+    <div id="contact">
+      <h1 className="contactMeTitle">Contact Me</h1>
+      <span className="contactDes">
         Feel free to contact me directly at mingmanyuen1231@gmail.com <br />
         or through the below form.
       </span>
-      <form className={styles.contactForm} ref={form} onSubmit={sendEmail}>
+      <form className="contactForm" ref={form} onSubmit={sendEmail}>
         <input
-          className={styles.contactFormName}
+          className="contactFormName"
           type="text"
           name="your_name"
           placeholder="Please enter your name :"
         />
         <input
-          className={styles.contactFormEmail}
+          className="contactFormEmail"
           type="email"
           name="your_email"
           placeholder="Please enter your email :"
         />
         <textarea
-          className={styles.contactFormMsg}
+          className="contactFormMsg"
           name="message"
           row="5"
           placeholder="Please enter your message :"
         />
-        <button className={styles.submitBtn} type="submit" value="Send">
+        <button className="submitBtn" type="submit" value="Send">
           Submit
         </button>
       </form>
